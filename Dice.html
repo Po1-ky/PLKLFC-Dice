@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLKLFC - DICE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #f39c12;
+            --text-color: #333;
+            --background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            height: 100%;
+        }
+
+        body {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dice.jpg-IlPqdtFOFA4peyxx63fa3p7W8uK2VI.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            padding: 4rem 0;
+        }
+
+        .content {
+            background-color: var(--background-color);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .event-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+            }
+
+            nav ul li {
+                margin: 0 0.75rem;
+            }
+
+            .event-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">PLKLFC-Dice</a>
+                <ul>
+                    <li><a href="file:///C:/Programming/%E6%9C%8D%E5%8B%99.html#%E6%94%BF%E7%B6%B1.html">政綱</a></li>
+                    <li><a href="file:///C:/Programming/%E6%9C%8D%E5%8B%99.html">服務</a></li>
+                    <li><a href="file:///C:/Programming/%E6%B4%BB%E5%8B%95.html">活動</a></li>
+                    <li><a href="file:///C:/Programming/%E5%AD%B8%E6%9C%83.html">學會</a></li>
+                    <li><a href="file:///C:/Programming/%E5%85%A7%E9%96%A3%E6%88%90%E5%93%A1.html">內閣成員</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+              <a name ="政綱"></a>
+                <h1>政綱</h1>
+                    <div class="event-card">
+                      <a href="#政綱"></a>
+                        <p><strong>內閣名稱:</strong></p>
+                        <p><span style="font-weight: 400;">Dice意思指骰子。</span></p>
+                        <p><span style="font-weight: 400;">一顆骰子有六面，六面分別刻着一至六點，每一點分別代表一個年級。而一顆骰子擲出的時候，六面擲到的機率都是一樣的，意思指我們對全校六級一視同仁，六級同樣重要。</span></p>
+                        <p>&nbsp;</p>
+                        <p><span style="font-weight: 400;">除此之外，骰子的點數是以三維角度分佈在六面，象徵我們學生會和全校各級如同一體。寓意學生會將帶領全校變得更團結。並如同骰子，在遊戲中展開無限可能。</span></p>
+                        <p>&nbsp;</p>
+                        <p><span style="font-weight: 400;">DICE</span></p>
+                        <p><span style="font-weight: 400;">D- Determined&nbsp;</span></p>
+                        <p><span style="font-weight: 400;">我們Dice的每一位成員都擁有堅強的意志，不會因為些少的挫折而放棄，我們會努力爭取不同的福利和活動，希望能令同學擁有青春熱血且難忘的校園回憶！</span></p>
+                        <p>&nbsp;</p>
+                        <p><span style="font-weight: 400;">I- Innovative&nbsp;</span></p>
+                        <p><span style="font-weight: 400;">我們會以新穎的想法，為學校帶來前所未有的革新，希望同學的校園生活變得更精彩刺激。我們會收納各位羅氏人嘅意見，積極向校方反映以及爭取，迎合大家的想法，以創造更好的校園！</span></p>
+                        <p>&nbsp;</p>
+                        <p><span style="font-weight: 400;">C- Collaborative</span></p>
+                        <p><span style="font-weight: 400;">每個人嘅性格都唔同，當然我們每位內閣成員都各有長處和特質，令我們Dice更多樣化。通過互相配合，令到我們內閣做得更好更強大！同時希望可以為大家創造一個更好嘅校園生活。</span></p>
+                        <p>&nbsp;</p>
+                        <p><span style="font-weight: 400;">E- energetic&nbsp;</span></p>
+                        <p><span style="font-weight: 400;">大家可能平常都會看到我們內閣成員在學校的不同角落，不知道你對我們的印象如何呢？或者你會看到我們平常嘻嘻哈哈，但我們在做事的時候其實好認真，會將所有事盡力做到最好。但身為學生，我哋都有玩得嘅一面，希望能夠同你哋相處係和諧歡樂嘅。</span></p>
+                        <p>&nbsp;</p>
+                        <p><strong>/Roll t𝐡𝐞 𝐃𝐢𝐜𝐞, 𝐦𝐚𝐤𝐞 𝐋𝐚𝐰𝐬 𝐫𝐢𝐬𝐞/</strong></p>
+                        <p>&nbsp;</p>
+                        <p><strong>內閣圖標的意義：</strong></p>
+                        <p><span style="font-weight: 400;">首先，我們骰子朝外的是五點，外圍的四點分別是紅黃藍綠色的，它們分別代表紅社黃社藍社綠社。而中間黑色的點是代表我們，這意味着我們作為學生會，會在全校的四社中間扮演橋樑的角色。</span></p>
+                        <p>&nbsp;</p>
+                        <p><strong>我們的宗旨：</strong></p>
+                        <p><span style="font-weight: 400;">1.盡我們最大努力提升同學對學校的歸屬感</span></p>
+                        <p><span style="font-weight: 400;">2.一切以同學為先，盡力滿足同學的要求和爭取同學的福利</span></p>
+                        <p><span style="font-weight: 400;">3.為學校建立更好的聲譽</span></p>
+                        <p><span style="font-weight: 400;">4.讓同學們的青春不留下任何遺憾</span></p>
+                        <p>&nbsp;</p>
+                        <p><strong>我們的方針：</strong></p>
+                        <p><span style="font-weight: 400;">方針1: 多方面溝通</span></p>
+                        <p><span style="font-weight: 400;">以多方面的溝通來豐富學校生活，緊貼同學需求</span></p>
+                        <p><span style="font-weight: 400;">實際行動：</span></p>
+                        <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">高透明度：令全校學生清晰了解學生會的運作，人員架構，以及決策過程</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">設立反饋機制：當學生有任何意見，可透過不同渠道向學生會質詢（設立意見箱，ig上放上google form link）</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">發佈資資訊：會在ig以及其他渠道向全校同學介紹學生會的工作任務，成就及未來計畫，加強學生對學生會的認識及聯繫，從而達成高透明度執政</span></li>
+                        </ul>
+                        <p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                        <p><span style="font-weight: 400;">方針2: 多元化</span></p>
+                        <p><span style="font-weight: 400;">我閣將善用學校資源，鼓勵老師和學生參與多元化活動，發掘其潛能及興趣，並在活動中增進師生關係</span></p>
+                        <p>&nbsp;</p>
+                        <p><span style="font-weight: 400;">實際行動：</span></p>
+                        <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">將會與全校所有學會及校隊舉行最少一次讓全校師生都可以參與的活動或比賽</span></li>
+                        </ul>
+                    </div>
+                    <div class="event-card">
+                        <h2>活動</h2>
+                        <ul>
+                            <li>Board Games</li>
+                            <li>Card Games</li>
+                            <li>Video Game Consoles</li>
+                            <li>Tabletop RPGs</li>
+                        </ul>
+                    </div>
+                    <div class="event-card">
+                        <h2>What to Bring</h2>
+                        <ul>
+                            <li>Student ID</li>
+                            <li>Your favorite games (optional)</li>
+                            <li>Snacks to share (optional)</li>
+                            <li>A great attitude!</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="To be continued" class="cta-button">RSVP Now</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Union. All rights reserved.</p>
+    </footer>
+</body>
+</html>
